@@ -54,7 +54,18 @@ cd scripts
 python segmentation_train.py \
     --image_dir <path/to/images> \
     --heatmap_dir <path/to/heatmaps> \
-    --save_dir <path/to/output>
+    --save_dir <path/to/output> \
+    --image_size 256 \
+    --num_channels 128 \
+    --num_res_blocks 2 \
+    --num_heads 1 \
+    --learn_sigma True \
+    --use_scale_shift_norm False \
+    --attention_resolutions 16 \
+    --diffusion_steps 1000 \
+    --noise_schedule linear \
+    --rescale_learned_sigmas False \
+    --rescale_timesteps False
 ```
 
 ## Inference
@@ -64,7 +75,18 @@ cd scripts
 python segmentation_sample.py \
     --image_dir <path/to/images> \
     --heatmap_dir <path/to/heatmaps> \
-    --model_path <path/to/model.pt>
+    --model_path <path/to/model.pt> \
+    --image_size 256 \
+    --num_channels 128 \
+    --num_res_blocks 2 \
+    --num_heads 1 \
+    --learn_sigma True \
+    --use_scale_shift_norm False \
+    --attention_resolutions 16 \
+    --diffusion_steps 1000 \
+    --noise_schedule linear \
+    --rescale_learned_sigmas False \
+    --rescale_timesteps False
 ```
 
 ## Citation
