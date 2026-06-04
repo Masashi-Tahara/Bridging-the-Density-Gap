@@ -11,24 +11,8 @@ This repository provides the training and inference code for a diffusion-model-b
 ## Requirements
 
 - NVIDIA GPU with CUDA 12.1
-- Docker (recommended)
 
 ## Setup
-
-### Using Docker (recommended)
-
-```bash
-# Build the image
-bash build.sh
-
-# Start the container
-bash run.sh
-
-# Attach to the running container
-bash exec.sh
-```
-
-### Manual installation
 
 ```bash
 pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu121
