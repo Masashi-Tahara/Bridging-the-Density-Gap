@@ -1,4 +1,4 @@
-﻿# Bridging the Density Gap: Diffusion Model for Stepwise Generation of Dense Cell Images from Sparse Data
+# Bridging the Density Gap: Diffusion Model for Stepwise Generation of Dense Cell Images from Sparse Data
 
 Official implementation of the paper accepted at **ISBI 2026**.
 
@@ -26,8 +26,8 @@ Download the dataset and organize the preprocessed data as follows:
 
 ```
 dataset/
-笏懌楳笏 image/       # cell image patches (256x256)
-笏披楳笏 heatmap/     # Gaussian heatmap patches (256x256)
+├── image/       # cell image patches (256x256)
+└── heatmap/     # Gaussian heatmap patches (256x256)
 ```
 
 ### Preprocessing
@@ -39,7 +39,7 @@ Refer to the `create_heatmap` function in `scripts/segmentation_sample.py` as a 
 
 **Step 2: Split images and heatmaps into patches**
 
-Use the provided `split_images.py` to divide both the cell images and heatmaps into overlapping 256ﾃ・56 patches:
+Use the provided `split_images.py` to divide both the cell images and heatmaps into overlapping 256x256 patches:
 
 ```bash
 python split_images.py
